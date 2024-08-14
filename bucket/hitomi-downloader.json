@@ -15,9 +15,6 @@
             "hitomi"
         ]
     ],
-    "persist": [
-        "hitomi_downloader_GUI.ini"
-    ],
     "pre_install": [
         "$src = \"$persist_dir\\hitomi_downloader_GUI.ini\"",
         "$dest = \"$dir\\hitomi_downloader_GUI.ini\"",
