@@ -15,10 +15,20 @@
             "hitomi"
         ]
     ],
-    "persist": "hitomi_downloader_GUI.ini",
-    "pre_install": "if (Test-Path \"$persist_dir\\hitomi_downloader_GUI.ini\") { Move-Item \"$persist_dir\\hitomi_downloader_GUI.ini\" \"$dir\" -Force }",
+    "persist": [
+        "hitomi_downloader_GUI.ini"
+    ],
+    "pre_install": [
+        "$src = \"$persist_dir\\hitomi_downloader_GUI.ini\"",
+        "$dest = \"$dir\\hitomi_downloader_GUI.ini\"",
+        "test-path $src -and copy-item -path $src -destination $dest -force"
+    ],
     "uninstaller": {
-        "script": "if (Test-Path \"$dir\\hitomi_downloader_GUI.ini\") { Move-Item \"$dir\\hitomi_downloader_GUI.ini\" \"$persist_dir\" -Force }"
+        "script": [
+            "$src = \"$dir\\hitomi_downloader_GUI.ini\"",
+            "$dest = \"$persist_dir\\hitomi_downloader_GUI.ini\"",
+            "test-path $src -and copy-item -path $src -destination $dest -force"
+        ]
     },
     "checkver": "github",
     "autoupdate": {
