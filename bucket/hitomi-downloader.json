@@ -15,6 +15,7 @@
             "hitomi"
         ]
     ],
+    "persist": "hitomi_downloader_GUI.ini",
     "checkver": "github",
     "autoupdate": {
         "architecture": {
