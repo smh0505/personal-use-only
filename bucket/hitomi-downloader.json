@@ -19,12 +19,12 @@
     "pre_install": [
         "$src = \"$persist_dir\\hitomi_downloader_GUI.ini\"",
         "$dest = \"$dir\\hitomi_downloader_GUI.ini\"",
-        "test-path $src -and copy-item -path $src -destination $dest -force"
+        "copy-item -path $src -destination $dest -force"
     ],
     "pre_uninstall": [
         "$src = \"$dir\\hitomi_downloader_GUI.ini\"",
         "$dest = \"$persist_dir\\hitomi_downloader_GUI.ini\"",
-        "test-path $src -and copy-item -path $src -destination $dest -force"
+        "copy-item -path $src -destination $dest -force"
     ],
     "checkver": "github",
     "autoupdate": {
