@@ -16,6 +16,10 @@
         ]
     ],
     "persist": "hitomi_downloader_GUI.ini",
+    "pre_install": "if (Test-Path \"$persist_dir\\hitomi_downloader_GUI.ini\") { Move-Item \"$persist_dir\\hitomi_downloader_GUI.ini\" \"$dir\" -Force }",
+    "uninstaller": {
+        "script": "if (Test-Path \"$dir\\hitomi_downloader_GUI.ini\") { Move-Item \"$dir\\hitomi_downloader_GUI.ini\" \"$persist_dir\" -Force }"
+    },
     "checkver": "github",
     "autoupdate": {
         "architecture": {
