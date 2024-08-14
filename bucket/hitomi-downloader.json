@@ -9,7 +9,12 @@
             "hash": "ab58de381ea3b49783aad509e6f1cb80481562c44371771438ab0288ba44076d"
         }
     },
-    "bin": "hitomi_downloader_GUI.exe",
+    "bin": [
+        [
+            "hitomi_downloader_GUI.exe",
+            "hitomi"
+        ]
+    ],
     "checkver": "github",
     "autoupdate": {
         "architecture": {
@@ -17,11 +22,5 @@
                 "url": "https://github.com/KurtBestor/Hitomi-Downloader/releases/download/v$version/hitomi_downloader_GUI.zip"
             }
         }
-    },
-    "shortcuts": [
-        [
-            "hitomi-downloader",
-            "hitomi-downloader.exe"
-        ]
-    ]
+    }
 }
