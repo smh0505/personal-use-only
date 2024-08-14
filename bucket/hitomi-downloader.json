@@ -17,12 +17,13 @@
     ],
     "persist": "hitomi_downloader_GUI.ini",
     "post_install": [
-        "Remove-Item \"$dir\\hitomi_downloader_GUI.ini\"",
         "if (Test-Path -PathType Container \"$persist_dir\\hitomi_downloader_GUI.ini\") { Remove-Item \"$persist_dir\\hitomi_downloader_GUI.ini\" }",
+        "Remove-Item \"$dir\\hitomi_downloader_GUI.ini\"",
         "if (Test-Path \"$persist_dir\\hitomi_downloader_GUI.ini\") { Copy-Item -Path \"$persist_dir\\hitomi_downloader_GUI.ini\" -Destination \"$dir\\hitomi_downloader_GUI.ini\" }"
     ],
     "uninstaller": {
         "script": [
+            "if (Test-Path \"$dir\\hitomi_downloader_GUI_backup.ini\") { Remove-Item \"$dir\\hitomi_downloader_GUI_backup.ini\" }",
             "if (Test-Path \"$dir\\hitomi_downloader_GUI.ini\") { Copy-Item -Path \"$dir\\hitomi_downloader_GUI.ini\" -Destination \"$persist_dir\\hitomi_downloader_GUI.ini\" -Force }"
         ]
     },
