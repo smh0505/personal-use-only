@@ -17,5 +17,11 @@
                 "url": "https://github.com/KurtBestor/Hitomi-Downloader/releases/download/v$version/hitomi_downloader_GUI.zip"
             }
         }
-    }
+    },
+    "shortcuts": [
+        [
+            "hitomi-downloader",
+            "hitomi-downloader.exe"
+        ]
+    ]
 }
