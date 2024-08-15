@@ -15,6 +15,12 @@
             "hitomi"
         ]
     ],
+    "shortcuts": [
+        [
+            "hitomi_downloader_GUI.exe",
+            "Hitomi Downloader"
+        ]
+    ],
     "persist": "dummy",
     "post_install": [
         "if (Test-Path \"$persist_dir\\hitomi_downloader_GUI.ini\") { Copy-Item -Path \"$persist_dir\\hitomi_downloader_GUI.ini\" -Destination \"$dir\\hitomi_downloader_GUI.ini\" }"
