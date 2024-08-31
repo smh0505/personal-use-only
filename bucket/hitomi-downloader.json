@@ -21,7 +21,7 @@
             "Hitomi Downloader"
         ]
     ],
-    "persist": "dummy",
+    "persist": "hitomi_data",
     "post_install": [
         "if (Test-Path \"$persist_dir\\hitomi_downloader_GUI.ini\") { Copy-Item -Path \"$persist_dir\\hitomi_downloader_GUI.ini\" -Destination \"$dir\\hitomi_downloader_GUI.ini\" }"
     ],
