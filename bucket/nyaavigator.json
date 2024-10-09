@@ -1,0 +1,18 @@
+{
+    "version": "1.1.0",
+    "description": "An app for browsing nyaa.si",
+    "homepage": "https://github.com/FawazTakahji/Nyaavigator",
+    "license": "GPL-3.0-only",
+    "url": "https://github.com/FawazTakahji/Nyaavigator/releases/download/1.1.0/Nyaavigator_1.1.0_Windows_Portable.zip",
+    "hash": "54e1876ad0f31229afbfb77c68efd4032900f6ec2ed0da3a09b793a736530d7e",
+    "shortcuts": [
+        [
+            "Nyaavigator.exe",
+            "Nyaavigator"
+        ]
+    ],
+    "checkver": "github",
+    "autoupdate": {
+        "url": "https://github.com/FawazTakahji/Nyaavigator/releases/download/$version/Nyaavigator_$version_Windows_Portable.zip"
+    }
+}
