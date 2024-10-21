@@ -5,6 +5,11 @@
     "license": "GPL-3.0-or-later",
     "url": "https://github.com/aleksey-hoffman/sigma-file-manager/releases/download/v1.7.0/Sigma-File-Manager-1.7.0-Windows-Setup.exe#/dl.7z",
     "hash": "418285100afe0b9a2624740b94f1fa7d483bd24d88327fb99d930aef26805a3f",
+    "depends": "7zip",
+    "pre_install": [
+        "7z x \"$dir\\`$PLUGINSDIR\\app-64.7z\" -o\"$dir\"",
+        "Remove-Item \"$dir\\`$PLUGINSDIR\", \"$dir\\Uninstall*\" -Force -Recurse"
+    ],
     "bin": [
         [
             "Sigma file manager.exe",
