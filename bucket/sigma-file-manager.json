@@ -1,0 +1,26 @@
+{
+    "version": "1.7.0",
+    "description": "A free, open-source, quickly evolving, modern file manager (explorer) app.",
+    "homepage": "https://sigma-file-manager.vercel.app/",
+    "license": "GPL-3.0-or-later",
+    "url": "https://github.com/aleksey-hoffman/sigma-file-manager/releases/download/v1.7.0/Sigma-File-Manager-1.7.0-Windows-Setup.exe",
+    "hash": "418285100afe0b9a2624740b94f1fa7d483bd24d88327fb99d930aef26805a3f",
+    "bin": [
+        [
+            "Sigma file manager.exe",
+            "sigma-fm"
+        ]
+    ],
+    "shortcuts": [
+        [
+            "Sigma file manager.exe",
+            "Sigma File Manager"
+        ]
+    ],
+    "checkver": {
+        "github": "https://github.com/aleksey-hoffman/sigma-file-manager"
+    },
+    "autoupdate": {
+        "url": "https://github.com/aleksey-hoffman/sigma-file-manager/releases/download/v$version/Sigma-File-Manager-$version-Windows-Setup.exe"
+    }
+}
