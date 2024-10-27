@@ -1,0 +1,24 @@
+{
+    "version": "",
+    "description": "",
+    "homepage": "https://github.com/k4yt3x/video2x",
+    "license": {
+        "identifier": "AGPL-3.0-only",
+        "url": "https://spdx.org/licenses/AGPL-3.0-only.html"
+    },
+    "url": "https://github.com/k4yt3x/video2x/releases/download/4.8.1/video2x-4.8.1-win32-full.zip",
+    "hash": "45FCE1334762B6BF8190FE0603C8F16087BC225AFA2D87D1B472B98D4DB1C048",
+    "extract_dir": "video2x-4.8.1-win32-full",
+    "persist": "video2x.yaml",
+    "shortcuts": [
+        [
+            "video2x_gui.exe",
+            "Video2x"
+        ]
+    ],
+    "checkver": "github",
+    "autoupdate": {
+        "url": "https://github.com/k4yt3x/video2x/releases/download/$version/video2x-$version-win32-full.zip",
+        "extract_dir": "video2x-$version-win32-full"
+    }
+}
