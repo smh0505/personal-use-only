@@ -1,10 +1,10 @@
 {
-    "version": "0.9.2",
+    "version": "0.9.3",
     "description": "An open-source, cross-platform terminal for seamless workflows",
     "homepage": "https://www.waveterm.dev/",
     "license": "Apache-2.0",
-    "url": "https://github.com/wavetermdev/waveterm/releases/download/v0.9.2/Wave-win32-x64-0.9.2.zip",
-    "hash": "1585ba6060f1b567c6133bf92c551ac5c00a28edbf5798e7a052ae83984099aa",
+    "url": "https://github.com/wavetermdev/waveterm/releases/download/v0.9.3/Wave-win32-x64-0.9.3.zip",
+    "hash": "cb2b4334d04f7c5b3c695ce657ff2a797cfdfdb4b5dd44b5433393644a340499",
     "shortcuts": [
         [
             "Wave.exe",
